@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input id = 'display' readonly>
+        <div id='keys'>
+            <div>
+                <button onclick="clearDisplay()">CS</button> 
+            </div>
+            <div>
+                <button onclick="collectFromDisplay('1')">1</button>
+                <button onclick="collectFromDisplay('2')">2</button>
+                <button onclick="collectFromDisplay('3')">3</button>
+            </div>
+            <div>
+                <button onclick="collectFromDisplay('4')">4</button>
+                <button onclick="collectFromDisplay('5')">5</button>
+                <button onclick="collectFromDisplay('6')">6</button>
+            </div>
+            <div>
+                <button onclick="collectFromDisplay('7')">7</button>
+                <button onclick="collectFromDisplay('8')">8</button>
+                <button onclick="collectFromDisplay('9')">9</button>
+            </div>
+            <div>
+                <button onclick="collectFromDisplay('0')">0</button>
+                <button onclick="collectFromDisplay('+')">+</button>
+                <button onclick="collectFromDisplay('-')">-</button>                
+            </div>
+          <button onclick="collectFromDisplay('*')">*</button>
+          <button onclick="collectFromDisplay('/')">/</button>
+          <button onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

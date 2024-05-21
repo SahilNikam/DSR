@@ -1,0 +1,54 @@
+draw() - calling the method.
+draw - giving reference to the method.
+
+draw() // function call this will refer to window/global object
+draw() // when strict mode is on it will show undefined. strict mode disables this to refer window object.
+c.draw() // method call this will refer to current object.
+
+by default the body of the classes are executed in te strict mode. that's why we cannot use this keyword to refer window object even actidentely.
+
+Symbols
+symbol is not a constructor, so it don't required new keyword in order to create object. Symbol is used to implement private members. when we call that object constructor every time it will return new unique value. and we can set that value as a name of the property. so outside user cannot access that property. but user can access with Object.getPropertysymbols(Object) and it will return Array of all symbols in the that object.
+
+Or// 
+
+WeakMaps  // achieve abstraction and encapsulation
+created with new keyword. it's important to note that technically Symbol is a constructor function. However, it doesn't behave like a typical constructor in that it doesn't create objects in the same way that, for example, Object or Array constructors do. weekmaps is dictionary where keys are object and values can be anything. it is called week because if there is no reference to keys it will go into the garbage collection.
+
+this keyword inside the class.
+problem with regular and arrow function different behaviour with "this".
+
+are arrow functions are object in javascript?
+--> It's the person function. Because arrow functions use curly brackets, {} you cannot implicitly return an object. To return an object using an arrow function, you must either use the return keyword or wrap the curly brackets in round brackets. 
+
+getters and setters
+https://members.codewithmosh.com/courses/object-oriented-programming-in-javascript-1/lectures/4881372
+
+Modules in js
+used to implement abstraction. things are highly related should go together.
+Common js modules
+ES^ modules
+
+cohesion
+
+transplider
+bundler
+
+ES6 feactures
+Destructuring Assignment 
+
+Event loops, callback queue, microtask queue 
+web API's
+what comes inside microtask queue 
+promises, mutation observer
+
+starvation
+
+callback is used to add connection between two functions. 
+callback hell
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+Node module versions
+
+npm outdated
+
+major/minor/patch
+
+Restful API's using express
+
+const http = require('http');
+const server = http.createServer(( req, res) => {
+    if(req.url = '/'){
+        // ...
+    }
+    if(req.url === api/cources){
+        //.....
+    }
+});
+server.listen(3000);
+here we can't write multiple if else statements for complex applications. so Express is used for building lightweight applications.
+
+Express : express is a minimal and flexible web application framework that provides broad features for building web and mobile applications.
+HTTP methods of express 
+get
+post
+put
+delete
+
+app.get('/', (req, res) => {  // this is more simple method with express
+    res.send('Hello');
+});
+app.get('/cources', (req, res) => {
+    res.send([1,2,3,4]);
+});
+app.listen(3000,() => console.log("Listening the port 3000"));
+
+
+nodemon = node monitor
+nodemon index.js // for running the application
+
+PORT envirement variable
+process.env.PORT
+
+set is used to set value of some envirement variable
+set PORT = 4000
+
+
+app.get('cources/:id', (req, res) => {
+    res.send({ id: 1, courceName:"first cource"});
+})
+
+req.params
+req.query
+
+query parameters:
+Query parameters are the components of a URL that come after the "?" symbol and are used to pass specific information to the server. In the context of web development with frameworks like Express.js, query parameters are commonly accessed to extract information from incoming HTTP requests.
+

@@ -1,0 +1,40 @@
+Comma
+ternary
+typeof it returns the data type of variable
+instenceof it returns true is specified object is a valid object of the specified class.
+void
+
+spread operator : we can use this on array, string and object. when spread parameter is used as parameter to the function it is known as reast parameter
+
+Execution Context run-time, the specific code gets parsed by a parser, the variables and functions are stored in memory, executable byte-code gets generated, and the code gets executed.
+
+hoisting
+This is because the JavaScript interpreter splits the declaration and assignment of functions and variables: it "hoists" your declarations to the top of their containing scope before execution.
+
+variable hoisting:
+Variables declared with let and const are hoisted but not initialized with a default value.
+
+this
+java script execution stack
+
+js is single threaded language
+refers to a language where only one set of instructions or operations can be executed at a time within a program.js typically operates within a single main thread, known as the "UI thread" or "main thread.mitigate this issue, techniques such as "asynchronous programming" and web workers are employed in JavaScript to delegate time-consuming tasks to separate threads or handle them asynchronously without blocking the main thread.
+
+hoisting also happens with var variables. var variables are initialized as undefined.
+
+function decleration    function doStuff() {};
+function expression   const doStuff = function() {} 
+const doStuff = () => {} functions in ES6 // arrow functions are also known as function expressions.
+function declarations
+function expressions : function expressions are used to avoide global scope
+IEEE - immediately invoked function expressions. here functions are created at the same time tyey're called.
+(function() => {})()   or    (() => {})()
+
+callback functions:
+functions is passed to another function is refered as callback function in js.
+https://www.freecodecamp.org/news/when-to-use-a-function-declarations-vs-a-function-expression-70f15152a0a0/
+
+temporal dead zone
+variable is hoisted to the top of its block scope, but it is not initialized. This means you can't access the variable before the line where it's declared. This behavior is known as the "temporal dead zone". 
+
+we can use nested try and catch block

@@ -1,0 +1,44 @@
+settimeout() is used for delay the function call. this is global object in js.
+
+node modular sysytem.
+var variable declared in node are not added into the global object.
+
+module object and it's properties. export property. node does not run the code directly, it wraps up the code into the function/module like.
+(function (exports, require, module, _filename, _dirname){
+  //code
+})
+
+console is not module console is object
+important modules in node
+file system
+http(class in node which is used build to web server)
+os
+path
+process
+query strings
+stream
+
+Event module
+signal that indicates that something has happened. when we receives request on that port http class raises an event.
+
+HTTP module
+used to create networking applications. it's a object which has createServer method with the help of this method we can create web server. this server has all the methods of EventEmitter(inheritance)
+
+Express
+
+
+Node Core
+So, in this section, you learned that:
+We don't have the window object in Node.
+The global object in Node is "global".
+Unlike browser applications, variables we define are not added to the "global" object.
+Every file in a Node application is a module. Node automatically wraps the code in each file with an IIFE (Immediately-invoked Function Expression) to create scope. So, variables and functions defined in one file are only scoped to that file and not visible to other files unless explicitly exported.
+To export a variable or function from a module, you need to add them to module.exports: module.exports.sayHello = sayHello;
+To load a module, use the require function. This function returns the module.exports object exported from the target module:
+const logger = require('./logger');-
+Node has a few built-in modules that enable us to work with the file system, path objects, network, operating system, etc.
+EventEmitter is one of the core classes in Node that allows us to raise (emit) and handle events. Several built-in classes in Node derive from EventEmitter.
+To create a class with the ability to raise events, we should extend EventEmitter: class Logger extends EventEmitter {}
+
+NPM 
+free libraries that we can add to our applications

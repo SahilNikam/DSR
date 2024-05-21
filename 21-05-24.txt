@@ -1,0 +1,12 @@
+REST
+Reoresentational State Transfer.
+
+const express = require('express');
+const app =  express();
+
+// app object has four methods 
+// app.get();
+// app.post(); // for creating the new entry
+// app.put();  for adding value
+// app.delete();
+
